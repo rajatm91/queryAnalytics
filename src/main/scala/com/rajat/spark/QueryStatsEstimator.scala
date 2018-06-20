@@ -14,6 +14,7 @@ trait QueryStatsEstimator {
     .builder()
     .appName("Query-Analyzer")
     .master("local[*]")
+
     .enableHiveSupport()
     .getOrCreate()
 
